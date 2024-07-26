@@ -15,7 +15,10 @@ class bmi extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black45,
       appBar: AppBar(
+        backgroundColor: Colors.black45,
+
         leading: IconButton(
           onPressed: ()
           {
@@ -30,7 +33,7 @@ class bmi extends StatelessWidget
             'BMI Result',
             style: TextStyle(
               color: Colors.blueGrey,
-              fontSize: 25,
+              fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
           ),
@@ -46,7 +49,7 @@ class bmi extends StatelessWidget
                 Text(
                   'Gender : ${isMale ? 'Male' : 'Female'}',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.blueGrey,
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -54,7 +57,7 @@ class bmi extends StatelessWidget
                 Text(
                   'Result : $result',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.blueGrey,
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,
                   ),
@@ -62,7 +65,7 @@ class bmi extends StatelessWidget
                 Text(
                   'Age : $age',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.blueGrey,
                     fontSize: 25.0,
                     fontWeight: FontWeight.bold,
                   ),

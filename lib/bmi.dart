@@ -62,11 +62,14 @@ class _bmiScreenState extends State<bmiScreen> {
                                 size: 120,
                                 color: Colors.blue,
                               ),
+                              SizedBox(
+                                height: 12,
+                              ),
                               Expanded(
                                 child: Text(
                                   'Male',
                                   style: TextStyle(
-                                    fontSize: 20,
+                                    fontSize: 35,
                                     fontWeight: FontWeight.bold
                                   ),
                                 ),
@@ -101,11 +104,14 @@ class _bmiScreenState extends State<bmiScreen> {
                                 size: 120,
                                 color: Colors.pinkAccent,
                               ),
+                              SizedBox(
+                                height: 12,
+                              ),
                               Expanded(
                                 child: Text(
                                   'Female',
                                   style: TextStyle(
-                                      fontSize: 20,
+                                      fontSize: 33,
                                       fontWeight: FontWeight.bold
                                   ),
                                 ),
@@ -130,14 +136,15 @@ class _bmiScreenState extends State<bmiScreen> {
                child: Column(
                  mainAxisAlignment: MainAxisAlignment.center,
                children: [
-                 Expanded(
-                   child: Text(
+                  Text(
                      'Height',
                      style: TextStyle(
-                       fontSize: 40,
+                       fontSize: 50,
                        fontWeight: FontWeight.bold,
                      ),
                    ),
+                 SizedBox(
+                   height: 10,
                  ),
                  Row(
                      mainAxisAlignment: MainAxisAlignment.center,
@@ -148,7 +155,7 @@ class _bmiScreenState extends State<bmiScreen> {
                    Text(
                      '${height.round()}',
                      style: TextStyle(
-                       fontSize: 25,
+                       fontSize: 40,
                        fontWeight: FontWeight.bold,
                      ),
                    ),
@@ -199,19 +206,21 @@ class _bmiScreenState extends State<bmiScreen> {
                           Text(
                             'Weight',
                             style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 40,
                               fontWeight: FontWeight.bold,
                             ),
+                          ),
+                          SizedBox(
+                            height: 5,
                           ),
                           Text(
                             '${weight}',
                             style: TextStyle(
-                              fontSize: 28,
+                              fontSize: 45,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Expanded(
-                            child: Row(
+                          Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 FloatingActionButton(
@@ -246,7 +255,6 @@ class _bmiScreenState extends State<bmiScreen> {
                                 ),
                               ],
                             ),
-                          )
                         ],
                       ),
                     ),
@@ -263,17 +271,24 @@ class _bmiScreenState extends State<bmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
+                          SizedBox(
+                            height: 15,
+                          ),
                           Text(
                             'Age',
                             style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 40,
                               fontWeight: FontWeight.bold,
                             ),
+
+                          ),
+                          SizedBox(
+                            height: 5,
                           ),
                           Text(
                             '${age}',
                             style: TextStyle(
-                              fontSize: 28,
+                              fontSize: 45,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
