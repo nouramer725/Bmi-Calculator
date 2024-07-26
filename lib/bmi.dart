@@ -271,9 +271,7 @@ class _bmiScreenState extends State<bmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          SizedBox(
-                            height: 15,
-                          ),
+                          
                           Text(
                             'Age',
                             style: TextStyle(
