@@ -133,57 +133,51 @@ class _bmiScreenState extends State<bmiScreen> {
     color: Colors.grey, // Set the color within BoxDecoration
     borderRadius: BorderRadius.circular(20),
     ),
-               child: Column(
-                 mainAxisAlignment: MainAxisAlignment.center,
-               children: [
-                  Text(
-                     'Height',
-                     style: TextStyle(
-                       fontSize: 50,
-                       fontWeight: FontWeight.bold,
+               child: Center(
+                 child: Column(
+                   mainAxisAlignment: MainAxisAlignment.center,
+                 children: [
+                    Text(
+                       'Height',
+                       style: TextStyle(
+                         fontSize: 60,
+                         fontWeight: FontWeight.bold,
+                       ),
                      ),
-                   ),
-                 SizedBox(
-                   height: 10,
-                 ),
-                 Row(
-                     mainAxisAlignment: MainAxisAlignment.center,
-                 children:[
-                   SizedBox(
-                     width: 20,
-                   ),
-                   Text(
-                     '${height.round()}',
-                     style: TextStyle(
-                       fontSize: 40,
-                       fontWeight: FontWeight.bold,
+                    Row(
+                       crossAxisAlignment: CrossAxisAlignment.end,
+                         mainAxisAlignment: MainAxisAlignment.center,
+                     children:[
+                       Text(
+                         '${height.round()}',
+                         style: TextStyle(
+                           fontSize: 55,
+                           fontWeight: FontWeight.bold,
+                         ),
+                       ),
+                       Text(
+                         'cm',
+                         style: TextStyle(
+                           fontSize: 20,
+                           fontWeight: FontWeight.bold,
+                         ),
+                       ),
+                                    ]
                      ),
+                   Slider(
+                     value: height,
+                     max: 250,
+                     min: 80,
+                     onChanged: (value){
+                       setState(() {
+                         height=value;
+                       });
+                       print(value.round());
+                     },
                    ),
-                   SizedBox(
-                     width: 5,
-                   ),
-                   Text(
-                     'cm',
-                     style: TextStyle(
-                       fontSize: 15,
-                       fontWeight: FontWeight.bold,
-                     ),
-                   ),
-               ]
-                 ),
-                 Slider(
-                   value: height,
-                   max: 250,
-                   min: 80,
-                   onChanged: (value){
-                     setState(() {
-                       height=value;
-                     });
-                     print(value.round());
-                   },
-                 ),
-               ],
-                ),
+                 ],
+                  ),
+               ),
 
              ),
 
@@ -271,14 +265,12 @@ class _bmiScreenState extends State<bmiScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-
                           Text(
                             'Age',
                             style: TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
                             ),
-
                           ),
                           SizedBox(
                             height: 5,

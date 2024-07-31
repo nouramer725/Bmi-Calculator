@@ -27,50 +27,58 @@ class bmi extends StatelessWidget
           icon: Icon(
             Icons.keyboard_arrow_left,
           ),
-          color: Colors.blueGrey,
+          color: Colors.white,
         ),
         title:Text(
             'BMI Result',
             style: TextStyle(
-              color: Colors.blueGrey,
+              color: Colors.white,
               fontSize: 30,
                 fontWeight: FontWeight.bold,
               ),
           ),
         ),
-      body: Padding(
-        padding: const EdgeInsets.all(22.0),
-        child: Container(
-          color: Colors.grey,
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Gender : ${isMale ? 'Male' : 'Female'}',
-                  style: TextStyle(
-                    color: Colors.blueGrey,
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: 50,
+            vertical: 170
+          ),
+          child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey, // Set the color within BoxDecoration
+                borderRadius: BorderRadius.circular(50),
+              ),
+            child: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Gender : ${isMale ? 'Male' : 'Female'}',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                Text(
-                  'Result : $result',
-                  style: TextStyle(
-                    color: Colors.blueGrey,
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
+                  Text(
+                    'Result : $result',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                Text(
-                  'Age : $age',
-                  style: TextStyle(
-                    color: Colors.blueGrey,
-                    fontSize: 25.0,
-                    fontWeight: FontWeight.bold,
+                  Text(
+                    'Age : $age',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 30.0,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
